@@ -44,7 +44,7 @@ SHELL ["bash", "-lc"]
 
 RUN git clone https://github.com/erdc/proteus && \
     cd proteus && \
-    git checkout master && \
+    git checkout main && \
     conda env create -f environment-dev.yml && \
     conda clean --all -f -y && \ 
     rm -rf /opt/conda/pkgs/* && \
